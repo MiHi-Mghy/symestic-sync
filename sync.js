@@ -1,7 +1,7 @@
 // ===============================
 // CONFIG
 // ===============================
-const TOKEN = "DEIN_BEARER_TOKEN";
+const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoaWxiZXJ0Lm1AbWVsZWdoeWF1dG9tb3RpdmUuZGUiLCJqdGkiOiI2YWEwODMwOC1kMGFhLTQ3MWUtYmYwMC0xMGE3NDAwYTY0MmMiLCJuYW1laWQiOiI3ODcyIiwiRW50ZXJwcmlzZUlkIjoiNzYiLCJJc01hc3RlckFkbWluIjoiRmFsc2UiLCJJc0tpb3NrVXNlciI6IkZhbHNlIiwiQXBpVG9rZW5JZCI6IjE1NiIsIlByb2R1Y3Rpb25MaW5lcyI6IjEyMCIsIm5iZiI6MTc2MzEwMjg0NywiZXhwIjoxNzk0NjM4ODQ3LCJpYXQiOjE3NjMxMDI4NDcsImlzcyI6Imh0dHBzOi8vYXBpLnN5bWVzdGljLmNvbSIsImF1ZCI6Imh0dHBzOi8vYXBwLnN5bWVzdGljLmNvbSJ9.UQlO6OM7JvliJ7f6WNdfDmpLhUx4la_SngX_CKQGrM4";
 const READ_URL = "https://api.symestic.com/api/processData/120/latestValues";
 const WRITE_URL = "https://api.symestic.com/api/processData/120/processSegment/178/update";
 
