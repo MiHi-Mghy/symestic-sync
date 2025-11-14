@@ -21,4 +21,4 @@ jobs:
         run: npm install node-fetch@3
 
       - name: Script starten (Endlosschleife alle 5 Sekunden)
-        run: node sync-loop.js
+        run: node ./sync-loop.js
