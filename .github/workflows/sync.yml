@@ -1,0 +1,25 @@
+name: Symestic Sync
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"   # jede Minute
+  workflow_dispatch:        # manuelles Ausführen
+
+jobs:
+  run-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node installieren
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Dependencies
+        run: npm install node-fetch@3
+
+      - name: Script ausführen
+        run: node sync.js
