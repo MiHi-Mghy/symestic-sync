@@ -1,13 +1,12 @@
-name: Symestic Sync
+name: Symestic Sync 5s
 
 on:
-  schedule:
-    - cron: "*/1 * * * *"   # jede Minute
-  workflow_dispatch:        # manuelles Ausführen
+  workflow_dispatch: # manuell starten
 
 jobs:
-  run-sync:
+  run-loop:
     runs-on: ubuntu-latest
+    timeout-minutes: 360 # max 6 Stunden
 
     steps:
       - name: Repository auschecken
@@ -18,8 +17,8 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Dependencies
+      - name: Dependencies installieren
         run: npm install node-fetch@3
 
-      - name: Script ausführen
-        run: node sync.js
+      - name: Script starten (Endlosschleife alle 5 Sekunden)
+        run: node sync-loop.js
